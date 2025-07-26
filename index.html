@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>unreleasedd - Orion Drift Content Creator</title>
+  <style>
+    :root {
+      --bg-color: #111;
+      --text-color: white;
+      --subtitle-color: #ccc;
+      --link-color: #6ec1ff;
+      --nav-color: hotpink;
+      --button-bg: #6ec1ff;
+      --button-text: #000;
+    }
+
+    body.light {
+      --bg-color: #f4f4f4;
+      --text-color: #111;
+      --subtitle-color: #444;
+      --link-color: #0077cc;
+      --nav-color: #c2185b;
+      --button-bg: #333;
+      --button-text: white;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 30px;
+      border: 3px solid var(--text-color);
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+    }
+
+    p.subtitle {
+      color: var(--subtitle-color);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin: 10px 0 25px;
+    }
+
+    nav a {
+      color: var(--nav-color);
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links {
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    .social-links a {
+      color: var(--link-color);
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    .connect-info {
+      color: var(--subtitle-color);
+    }
+
+    .connect-info a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    .light-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--button-bg);
+      color: var(--button-text);
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 8px #6ec1ff80;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://media.discordapp.net/attachments/1397470320499363910/1398600052020351026/IMG_7385.jpg?ex=6885f34d&is=6884a1cd&hm=60039932c209c46c88e36f6b34e05a64fd44307776e9aecbf10ff2355fd690c7&=&format=webp&width=720&height=960" alt="unreleasedd Profile" class="profile">
+  <h1>unreleasedd</h1>
+  <p class="subtitle">Orion Drift Content Creator</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="social-links">
+    Connect with me:
+    <a href="https://discord.gg/wcUakdHeZ4" target="_blank">Discord</a> |
+    <a href="mailto:unreleasedgt1@gmail.com">Email</a> |
+    <a href="https://www.tiktok.com/@unreleasedyt" target="_blank">TikTok</a> |
+    <a href="#">Meta: unreleasedd</a>
+  </div>
+
+  <section>
+    <h2>Welcome</h2>
+    <p>Yo! I'm unreleasedd. Im a new Orion drift content creator! Ive been playing Orion drift for around 7 months!</p>
+
+    <h2>About Me</h2>
+    <p>I've played Orion Drift since the Open EA, I do content on Orion Drift on my TikTok!</p>
+
+    <h2>Connect</h2>
+    <p class="connect-info">
+      Email: <a href="mailto:unreleasedgt1@gmail.com">unreleasedgt1@gmail.com</a><br>
+      TikTok: <a href="https://www.tiktok.com/@unreleasedyt" target="_blank">@unreleasedyt</a><br>
+      Meta: unreleasedd
+    </p>
+  </section>
+
+   <h2>Credits!</h2>
+   <p class="connect-info">
+    Credits to Pz for the code and the inspiration!
+   </p>
+
+  <button class="light-button" onclick="toggleMode()">Light Mode</button>
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.querySelector('.light-button');
+      body.classList.toggle('light');
+      if (body.classList.contains('light')) {
+        btn.textContent = 'Dark Mode';
+      } else {
+        btn.textContent = 'Light Mode';
+      }
+    }
+  </script>
+
+</body>
+</html>
